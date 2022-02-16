@@ -9,3 +9,9 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+:root {
+    --color-bg-dark2: #19171c;
+    --color-bg-dark1: #1b1d21;
+    --color-gray-dark1: #444444;
+}

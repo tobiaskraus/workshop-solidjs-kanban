@@ -1,25 +1,17 @@
-import { Component, createEffect, createSignal } from 'solid-js';
+import { Component } from 'solid-js';
 
 import styles from './App.module.css';
+import logo from './assets/pemedia.png';
 
 const App: Component = () => {
-    const [count, setCount] = createSignal(0);
-    const doubleCount = () => count() * 2;
-
-    const onClick = () => {
-        setCount((_count) => _count + 1);
-    };
-
-    createEffect(() => {
-        console.log('send current doubleCount to API:', doubleCount());
-    });
-
     return (
         <div class={styles.App}>
-            <header class={styles.header}>
-                <h2>{doubleCount()}</h2>
-                <button onClick={onClick}>click me</button>
-            </header>
+            <div class={styles.sidebarHeader}>
+                <img class={styles.logo} src={logo} alt="Pemedia Logo" />
+            </div>
+            <header class={styles.header}>2</header>
+            <div class={styles.sidebar}>3</div>
+            <div class={styles.main}>4</div>
         </div>
     );
 };
