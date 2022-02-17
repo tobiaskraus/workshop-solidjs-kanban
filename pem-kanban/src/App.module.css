@@ -17,15 +17,31 @@
 .header,
 .main {
     background-color: var(--color-bg-dark1);
+    padding: 10px 20px;
 }
 
+.header,
 .sidebarHeader {
     display: flex;
     align-items: center;
+}
+
+.header h1 {
+    font-size: 18px;
 }
 
 .logo {
     width: 120px;
     max-width: 100%;
     max-height: 100%;
+}
+
+.sidebar > a {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.selected {
+    color: var(--color-primary);
 }
