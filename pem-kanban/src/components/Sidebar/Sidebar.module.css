@@ -1,0 +1,10 @@
+.Sidebar > a {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.Sidebar > a.selected {
+    cursor: default;
+    color: var(--color-primary);
+}
