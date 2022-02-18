@@ -1,14 +1,12 @@
 import { Component } from 'solid-js';
+import { selectedProject } from '../../store';
 
 import styles from './Header.module.css';
 
-interface HeaderProps {
-    selectedProject: string;
-}
-const Header: Component<HeaderProps> = (props) => {
+const Header: Component = () => {
     return (
         <header class={styles.Header}>
-            <h1># {props.selectedProject}</h1>
+            <h1># {selectedProject()}</h1>
             <span>icon</span>
         </header>
     );

@@ -1,21 +1,17 @@
 import { Component, For } from 'solid-js';
 
 import styles from './Sidebar.module.css';
+import * as store from '../../store';
 
-interface SidebarProps {
-    projects: string[];
-    selectedProject: string;
-    onSelectProject: (project: string) => void;
-}
-const Sidebar: Component<SidebarProps> = (props) => {
+const Sidebar: Component = () => {
     return (
         <nav class={styles.Sidebar}>
             <p>Projekte</p>
-            <For each={props.projects}>
+            <For each={store.projects}>
                 {(project) => (
                     <a
-                        class={props.selectedProject === project ? styles.selected : ''}
-                        onclick={() => props.onSelectProject(project)}
+                        class={store.selectedProject() === project ? styles.selected : ''}
+                        onclick={() => store.setSelectedProject(project)}
                     >
                         # {project}
                     </a>
