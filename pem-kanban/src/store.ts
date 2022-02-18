@@ -1,5 +1,14 @@
-import { createSignal } from 'solid-js';
+import { createEffect, createResource, createSignal } from 'solid-js';
 
-export const projects = ['abs-docu', 'hrs-corporate', 'phantasialand'];
+export const [projects] = createResource<string[]>(
+    () => fetch('src/data/projects.json').then((res) => res.json()),
+    {
+        initialValue: [],
+    }
+);
 
-export const [selectedProject, setSelectedProject] = createSignal(projects[0]);
+createEffect(() => {
+    setSelectedProject(projects()[0]);
+});
+
+export const [selectedProject, setSelectedProject] = createSignal(projects()[0]);

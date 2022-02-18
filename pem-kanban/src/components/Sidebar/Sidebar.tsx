@@ -7,7 +7,7 @@ const Sidebar: Component = () => {
     return (
         <nav class={styles.Sidebar}>
             <p>Projekte</p>
-            <For each={store.projects}>
+            <For each={store.projects()}>
                 {(project) => (
                     <a
                         class={store.selectedProject() === project ? styles.selected : ''}
