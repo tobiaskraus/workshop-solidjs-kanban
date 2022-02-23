@@ -1,4 +1,5 @@
 import { Component, For } from 'solid-js';
+import { NavLink } from 'solid-app-router';
 
 import styles from './Sidebar.module.css';
 import * as store from '../../store';
@@ -9,12 +10,14 @@ const Sidebar: Component = () => {
             <p>Projekte</p>
             <For each={store.projects()}>
                 {(project) => (
-                    <a
-                        class={store.selectedProject() === project ? styles.selected : ''}
+                    <NavLink
+                        class={styles.link}
                         onclick={() => store.setSelectedProject(project)}
+                        activeClass={styles.active}
+                        href={`/projects/${project}`}
                     >
                         # {project}
-                    </a>
+                    </NavLink>
                 )}
             </For>
         </nav>
