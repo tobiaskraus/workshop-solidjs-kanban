@@ -1,7 +1,7 @@
 import { createEffect, createResource, createSignal } from 'solid-js';
 
 export const [projects] = createResource<string[]>(
-    () => fetch('src/data/projects.json').then((res) => res.json()),
+    () => fetch('/src/data/projects.json').then((res) => res.json()),
     {
         initialValue: [],
     }
