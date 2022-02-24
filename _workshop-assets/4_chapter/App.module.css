@@ -1,0 +1,50 @@
+.App {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-template-rows: 56px 1fr;
+    background-color: var(--color-gray-dark1);
+    grid-gap: 1px;
+    color: white;
+    height: 100vh;
+}
+
+.sidebar,
+.sidebarHeader {
+    background-color: var(--color-bg-dark2);
+    padding: 10px 20px;
+}
+
+.header,
+.main {
+    background-color: var(--color-bg-dark1);
+    padding: 10px 20px;
+}
+
+.header,
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 18px;
+}
+
+.logo {
+    width: 120px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sidebar > a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.sidebar > a.selected {
+    cursor: default;
+    color: var(--color-primary);
+}
