@@ -21,6 +21,8 @@
         "vite-plugin-solid": "^2.2.1"
     },
     "dependencies": {
+        "@faker-js/faker": "^6.0.0-alpha.7",
+        "solid-app-router": "^0.3.0",
         "solid-js": "^1.3.2"
     }
 }
