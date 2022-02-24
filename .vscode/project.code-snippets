@@ -1,0 +1,46 @@
+{
+    "SignalJS: createSignal": {
+        "prefix": "signal",
+        "scope": "typescriptreact",
+        "body": ["const [$1, $2] = createSignal($3);"]
+    },
+    "SignalJS: Component / new file": {
+        "prefix": "compfile",
+        "scope": "typescriptreact",
+        "body": [
+            "import { Component } from 'solid-js';",
+            "",
+            "import styles from './$1.module.css';",
+            "",
+            "const $1: Component = () => {",
+            "",
+            "    return (",
+            "        $2",
+            "    );",
+            "};",
+            "",
+            "export default $1"
+        ]
+    },
+    "SignalJS: Component / new file / with props": {
+        "prefix": "compfile-with-props",
+        "scope": "typescriptreact",
+        "body": [
+            "import { Component } from 'solid-js';",
+            "",
+            "import styles from './$1.module.css';",
+            "",
+            "interface $1Props {",
+            "    $2",
+            "}",
+            "const $1: Component<$1Props> = (props) => {",
+            "",
+            "    return (",
+            "        $3",
+            "    );",
+            "};",
+            "",
+            "export default $1"
+        ]
+    }
+}

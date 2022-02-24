@@ -1,0 +1,12 @@
+.link {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--color-text-on-dark);
+}
+
+.link.active {
+    cursor: default;
+    color: var(--color-primary);
+}
