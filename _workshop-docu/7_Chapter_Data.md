@@ -109,7 +109,7 @@ Ideas
 -   Implement a design for the tickets (maybe with popup)
 -   Drag & Drop (might take a while)
 -   More store logic (filtering, creating, ...) (maybe use of createStore)
--   [Differences to React](Differences_to_React.md)
+-   [Differences to React](Differences_To_React.md)
 -   Implement or read about some cool Solid Features
     -   Custom directives. For example `<div class="modal" use:clickOutside={() => setShow(false)}>`
     -   createStore
