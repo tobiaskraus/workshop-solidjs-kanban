@@ -1,16 +1,4 @@
 .columns {
     display: flex;
-    gap: 10px;
-}
-
-.column {
-    flex: 1;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.ticket {
-    background-color: gray;
+    gap: 30px;
 }
