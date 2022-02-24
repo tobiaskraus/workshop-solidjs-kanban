@@ -39,15 +39,15 @@ git checkout {chapter-name}
 
 ## Let's start!
 
--   [1. Chapter Setup](_workshop-docu/1_Chapter_Setup)
--   [2. Start](_workshop-docu/2_Start)
--   [3. Chapter_States](_workshop-docu/3_States)
--   [4. Chapter_Layout](_workshop-docu/4_Chapter_Layout)
--   [5. Chapter_Components](_workshop-docu/5_Chapter_Components)
--   [6. Chapter_Routing](_workshop-docu/6_Chapter_Routing)
--   [6. Chapter_Routing](_workshop-docu/6_Chapter_Routing)
--   [7. Chapter_Data](_workshop-docu/7_Chapter_Data)
--   [Differences_To_React](_workshop-docu/Differences_To_React)
+-   [1. Chapter Setup](_workshop-docu/1_Chapter_Setup.md)
+-   [2. Start](_workshop-docu/2_Start.md)
+-   [3. Chapter_States](_workshop-docu/3_States.md)
+-   [4. Chapter_Layout](_workshop-docu/4_Chapter_Layout.md)
+-   [5. Chapter_Components](_workshop-docu/5_Chapter_Components.md)
+-   [6. Chapter_Routing](_workshop-docu/6_Chapter_Routing.md)
+-   [6. Chapter_Routing](_workshop-docu/6_Chapter_Routing.md)
+-   [7. Chapter_Data](_workshop-docu/7_Chapter_Data.md)
+-   [Differences_To_React](_workshop-docu/Differences_To_React.md)
 
 ## Want to dive deeper?
 
