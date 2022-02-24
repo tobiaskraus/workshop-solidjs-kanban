@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 const Header: Component = () => {
     return (
         <header class={styles.Header}>
-            <h1># {selectedProject()}</h1>
+            <h1># {selectedProject()?.slug}</h1>
             <span>icon</span>
         </header>
     );

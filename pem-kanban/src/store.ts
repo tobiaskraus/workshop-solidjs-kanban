@@ -1,7 +1,22 @@
 import { createEffect, createResource, createSignal } from 'solid-js';
+import { Project } from './models/project';
+import { Ticket } from './models/ticket';
+import { User } from './models/user';
 
-export const [projects] = createResource<string[]>(
-    () => fetch('/src/data/projects.json').then((res) => res.json()),
+export const [projects] = createResource<Project[]>(
+    () => import('./data/projects').then((res) => res.projects),
+    {
+        initialValue: [],
+    }
+);
+export const [users] = createResource<User[]>(
+    () => import('./data/users').then((res) => res.users),
+    {
+        initialValue: [],
+    }
+);
+export const [tickets] = createResource<Ticket[]>(
+    () => import('./data/tickets').then((res) => res.tickets),
     {
         initialValue: [],
     }

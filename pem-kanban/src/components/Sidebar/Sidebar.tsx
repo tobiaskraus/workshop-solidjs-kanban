@@ -14,9 +14,9 @@ const Sidebar: Component = () => {
                         class={styles.link}
                         onclick={() => store.setSelectedProject(project)}
                         activeClass={styles.active}
-                        href={`/projects/${project}`}
+                        href={`/projects/${project.slug}`}
                     >
-                        # {project}
+                        # {project.slug}
                     </NavLink>
                 )}
             </For>
